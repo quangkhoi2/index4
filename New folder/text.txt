@@ -1,0 +1,13 @@
+HTML-CSS-Javascript
+Home
+HTML
+CSS
+CSS2
+CSS3
+Examples
+Welcome to CSS3_five
+This simple, fixed width website template is released under a Creative Commons Attribution 3.0 Licence. This means you are free to download and use it for personal and commercial projects. However, you must leave the 'design from css3templates.co.uk' link in the footer of the template.
+
+This template is written entirely in HTML5 and CSS3.
+
+You can view more free CSS3 web templates here.

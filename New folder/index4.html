@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    #container {
+        width: 70%;
+        height: 900px;
+        border: 1px solid;
+    }
+
+    header {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(214, 118, 77);
+        padding: 20px;
+
+    }
+
+    header h1 {
+        color: green;
+        text-shadow: 6px 6px 6px white;
+
+    }
+
+    nav {
+        width: 100%;
+        height: 40px;
+        border: 1px solid #000;
+        float: left;
+        padding: 5px 2px;
+        background-color: aquamarine;
+    }
+
+    nav ul>li {
+        display: inline;
+        padding: 20px;
+        font-size: 20px;
+        list-style-type: none;
+    }
+
+    nav ul>li a {
+        text-decoration: none;
+        color: red;
+    }
+
+    nav li>ul {
+        display: none;
+    }
+
+    nav li:hover ul {
+        position: absolute;
+        display: block;
+        left: 520px;
+        background-color: rgb(223, 223, 227);
+    }
+
+    nav li:hover ul li a {
+        display: block;
+    }
+
+    #anh {
+        width: 100%;
+        height: 170px;
+        background-color: blue;
+        background-image: url(images/anh.png);
+        background-size: cover;
+        background-position: cover;
+    }
+
+    section {
+        width: 70%;
+        height: 600px;
+    
+        float: left;
+    }
+    section h1{
+        font-size: 30px;
+        padding: 20px;
+        color: brown;
+    }
+    section h5{
+        padding: 10px 50px;
+        font-size: 25px;
+        color: rgb(137, 116, 15);
+    }
+
+    section form .a input{
+          width: 100%;
+          padding: 20px 10px;
+          border-top: 0px;
+          border-right: 0px;
+          border-left: 0px;
+    }
+    section form .a{
+        padding: 10px 45px;
+    }
+    section form input[type=button]{
+        padding: 7px;
+        background-color: green;
+        color: white;
+    }
+    section form .b{
+        padding: 30px 45px;
+    }
+    aside {
+        width: 30%;
+        height: 550px;
+        float: left;
+    }
+    
+
+    #top {
+        width: 80%;
+        height: 200px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        background-color: aqua;
+        margin-top: 40px;
+        margin-right: 12px;
+    }
+    #top h3{
+        color: brown;
+        margin-bottom: 20px;
+        margin-right:1000px ;
+        
+    }
+    #top ul{
+        color: brown;
+        font-size:90% ;
+        padding: 20px;
+    }
+
+    #bot {
+        width: 75%;
+        height: 250px;
+        margin-right: 12px;
+        background-color: black;
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+        background-color: brown;
+        float: left;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>ATUMN TRAVEL COMPANY</h1>
+
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Third party services</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Order</a></li>
+            </ul>
+        </nav>
+        <div id="anh"></div>
+        <section>
+            <h1>Sign up for membership benefits</h1>
+            <h5><i><p>Oophical values are transparency, respect, formlity and reponsibilit. Our stimulus is
+                your enthur philosusiasm. Our  motto is your satisfaction</p></i></h5>
+                <form action="">
+                    <div class="a">
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="a">
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <div class="a">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="a">
+                        <input type="Password" placeholder="Retype password">
+
+                    </div>
+                    <div class="b">
+                        <input type="button" value="SIGN UP">
+                    </div>
+                </form>
+        </section>
+        <aside>
+            <div id="top">
+                <h3>Links</h3>
+                <ul>
+                    <li>Make your Own Tour</li>
+                    <li>Maldives Tours</li>
+                    <li>Nature&Adventure</li>
+                    <li>Readymade Tours</li>
+                    <li>Europe Tours</li>
+                    <li>Rusia Tours</li>
+                </ul>
+            </div>
+            <div id="bot"></div>
+        </aside>
+        <footer></footer>
+    </div>
+</body>
+
+</html>

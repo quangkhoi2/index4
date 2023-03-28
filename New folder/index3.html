@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        * {
+            margin: 0 auto;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        #container {
+            width: 70%;
+            height: 850px;
+            border: 1px solid#000;
+        }
+
+        header {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(190, 91, 4);
+            padding: 1px 30px;
+        }
+
+        header h1 {
+            padding: 5px;
+            color: rgb(92, 117, 3);
+            font-size: 220%;
+            text-shadow: 6px 6px 6px white;
+        }
+
+        nav {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #000;
+            padding: 5px 2px;
+            float: left;
+            background-color: rgb(247, 247, 247) ;
+        }
+
+        nav ul>li {
+            display: inline;
+            padding: 20px;
+            font-size: 20px;
+            list-style-type: none;
+        }
+
+        nav ul>li a {
+            text-decoration: none;
+            color: red;
+        }
+        nav li>ul{
+            display: none;
+        }
+        nav li:hover ul{
+            position: absolute;
+            display:block;
+            left: 450px;
+            background-color: rgb(204, 77, 216);
+        }
+        nav li:hover ul li a{
+            display: block;
+        }
+
+        #anh{
+            width: 100%;
+            height: 150px;
+           
+            background-image: url(images/anh.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        section {
+            width: 66%;
+            height: 600px;
+            float: left;
+        }
+        section h1{
+            font-size: 30px;
+            padding: 20px;
+            color: rgb(137, 117, 15);
+        }
+        section h5{
+            padding: 10px 50px;
+            font-size: 18px;
+            color: rgb(137, 117, 15);
+
+        }
+        section form .a input{
+            width: 100%;
+            padding: 20px 10px;
+            border-top:0px;
+            border-right: 0px;
+            border-left: 0px;
+        }
+        section form .a{
+            padding: 10px 45px;
+        }
+        section form input[type=button]{
+            padding: 7px;
+            background-color: green;
+            color: white;
+        }
+            section form .b{
+                padding: 30px 45px;
+                
+            }
+
+        aside { 
+            width: 34%;
+            height: 600px;
+            float: left;
+        }
+        #top{
+            width: 75%;
+            height: 230px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            background-color: antiquewhite ;
+            padding: 15px 20px;
+            margin-top: 35px;
+            margin-right: 12px;
+        }
+        #top h3{
+            color: brown;
+            margin-bottom: 20px;
+
+        }
+        #top ul{
+            color: brown;
+            font-size:90%;
+            padding: 20px;
+        }
+        #bottom{
+            width: 75%;
+            height: 250px;
+            
+            margin-right: 12px; 
+        }
+        #bottom h3{
+            color: brown;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #bottom img{
+            width: 120px;
+            height: 80px;
+            padding: 10px 10px;
+        }
+        #c{
+            border: 1px solid #000;
+            float: left;
+            margin-right: 10px ;
+        }
+
+        footer {
+            width: 100%;
+            height: 40px;
+           
+            float: left;
+            
+        }
+        footer img{
+            width: 100%;
+        }
+    </Style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1><i>ATUMN TRAVEL COMPANY</i></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a>
+                    <ul>
+                        <li>Our services</li>
+                        <li>Third party services</li>
+                    </ul>
+                </li>
+                <li><a href="#">Order</a></li>
+            </ul>
+        </nav>
+        <div id="anh"></div>
+        <section>
+            <h1>Sign up for membership benefits</h1>
+            <h5><i>Oophical values are transparency, respect, formlity and reponsibilit. Our stimulus is
+                your enthur philosusiasm. Our  motto is your satisfaction</p></i></h5>
+                <form action="">
+                    <div class="a">
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="a">
+                        <input type="email"placeholder="E-mail">
+                    </div>
+                    <div class="a">
+                        <input type="Password" placeholder="Password">
+                    </div>
+                    <div class="a">
+                        <input type="Password" placeholder="Retype password">
+                    </div>
+                    <div class="b">
+                        <input type="button" value="SING ME UP">
+                    </div>
+                </form>
+       
+            </section>
+        <aside>
+            <div id="top">
+                <h3>Links</h3>
+                <ul>
+                    <li>Make your Own Tour</li>
+                    <li>Maldives Tours</li>
+                    <li>Nature&Adventure</li>
+                    <li>Readymade Tours</li>
+                    <li>Europe Tours</li>
+                    <li>Rusia Tours</li>
+                </ul>
+            </div>
+            <div id="bottom">
+                <h3>More info</h3>
+                <p>
+                    <div id="c">
+                        <img src="images/la.png" alt="">
+                    </div>
+                    Our purpose is the client who gives to us the opportunity to serve and to make known the reality around
+                the world
+                </p>
+            </div>
+        </aside>
+        <footer>
+            <img src="images/footer.png" alt="">
+        </footer>
+    </div>
+</body>
+
+</html>
